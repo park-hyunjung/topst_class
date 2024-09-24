@@ -46,9 +46,7 @@ try:
         for pin in GPIO_PINS:
             gpio_write(pin, 1)
             time.sleep(0.5)
-            
-            pre_pin = pin
-            gpio_write(pre_pin, 0)
+            gpio_write(pin, 0)
 
 except KeyboardInterrupt:
     for pin in GPIO_PINS:
