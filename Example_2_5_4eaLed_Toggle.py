@@ -49,24 +49,15 @@ try:
 
     while True:
         # LED 4개를 500ms 동안 켜고 다른 4개를 끄기
-        for pin in GPIO_PINS_1:
-            gpio_write(pin, 1)
-            print("GPIO %d 상태 : On" %pin)
-        for pin in GPIO_PINS_2:
-            gpio_write(pin, 0)
-            print("GPIO %d 상태 : Off" %pin)
+        #TODO
 
-        time.sleep(0.5)
 
-        for pin in GPIO_PINS_2:
-            gpio_write(pin, 1)
-            print("GPIO %d 상태 : On" %pin)
-        for pin in GPIO_PINS_1:
-            gpio_write(pin, 0)
-            print("GPIO %d 상태 : Off" %pin)
 
-        time.sleep(0.5)
 
+
+
+
+        
 except KeyboardInterrupt:
     for pin in GPIO_PINS_1:
         gpio_write(pin, 0)
